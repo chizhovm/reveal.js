@@ -1,49 +1,682 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+    <title>History. Programming languages.</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css">
 
-		<script src="js/reveal.js"></script>
+    <!-- Printing and PDF exports  -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
-			});
-		</script>
-	</body>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>History. Programming languages.</h1>
+                <p>by Michael Chizhov</p>
+            </section>
+            <section>
+                <section>
+                    <h2>Early History</h2>
+                </section>
+                <section>
+                    <img src='assets/Ada_Byron_daguerreotype_by_Antoine_Claudet_1843_or_1850.jpg'>
+                    <p>Ada Lovelace<br>10.12.1815 - 27.10.1852</p>
+                </section>
+                <section>
+                    <img src='assets/Charles_Babbage_-_1860.jpg'>
+                    <p>Charles Babbage<br>26.12.1791 - 18.10.1871</p>
+                </section>
+                <section>
+                    <img src='assets/AnalyticalMachine_Babbage_London.jpg'>
+                    <p>Analytical Machine</p>
+                </section>
+                <section>
+                    <img src='assets/Alan_Turing_Aged_16.jpg'>
+                    <p>ALan Turing (23.06.1912 - 07.07.1954)</p>
+                </section>
+                <section>
+                    <img src='assets/600px-Turing_machine_1.jpg'>
+                </section>
+                <section>
+                    <img src='assets/A_la_mémoire_de_J.M._Jacquard.jpg'>
+                </section>
+                <section>
+                    <img src='assets/Telaio_Jacquard_1849.jpg'>
+                </section>
+                <section>
+                    <img src='assets/Jacquard.loom.cards.jpg'>
+                </section>
+                <section>
+                    <img src='assets/Masson_Mills_WTM_10_Jacquard_Card_Cutter_5890.jpg'>
+                </section>
+                <section>
+                    <img src='assets/1200px-Babbage_Difference_Engine.jpg'>
+                    <p>C.Babbage Difference Engine</p>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h2>
+                        First programming languages
+                    </h2>
+                </section>
+                <section>
+                    <img src='assets/565px-Motorola_6800_Assembly_Language.png'>
+                    <p>Motorola 6800 Assembly Language</p>
+                </section>
+                <section>
+                    <img src='assets/Konrad_Zuse_(1992).jpg'>
+                    <p>Konrad Zuse (22.06.1910 - 18.12.1995)</p>
+                </section>
+                <section>
+                    <img src='assets/Zuse_Z1-2.jpg'>
+                    <p>Replica of the Z1 in the German Museum of Technology in Berlin</p>
+                </section>
+                <section>
+                    <img src='assets/mauchly1.jpg'>
+                    <p>John William Mauchly (30.08.1907 - 08.01.1980)</p>
+                </section>
+                <section>
+                    <img src='assets/1178px-Eniac.jpg'>
+                    <p>ENIAC</p>
+                </section>
+                <section>
+                    <pre><br>
+                                X3 =  (  X1 +  Y1 )  /  X1 * Y1   substitute variables
+                                X3 03 09 X1 07 Y1 02 04 X1   Y1   substitute operators and parentheses.
+                                                                  Note multiplication is represented
+                                                                  by juxtaposition.
+                                07Y10204X1Y1                      group into 12-byte words.
+                                0000X30309X1
+						</pre>
+                    <p>The example of the "Short Code"</p>
+                </section>
+                <section>
+                    <img src='assets/1200px-Museum_of_Science,_Boston,_MA_-_IMG_3163.jpg'>
+                    <p>UNIVAC I</p>
+                </section>
+                <section>
+                    <pre>
+                                c@VA t@IC x@½C y@RC z@NC
+                                INTEGERS +5 →c           # Put 5 into c
+                            	  →t                 # Load argument from lower accumulator to variable t
+                                  +t     TESTA Z        # Put |t| into lower accumulator
+                                  -t
+                           		  ENTRY Z
+                                  SUBROUTINE 6 →z          # Run square root subroutine on lower accumulator
+                                						 # value and put the result into z
+                                  +tt →y →x              # Calculate t^3 and put it into x 
+                                  +tx →y →x
+                             	+z+cx   CLOSE WRITE 1    # Put z + (c * x) into lower accumulator and return
+						</pre>
+                    <P>Alick Glennie's Autocode</P>
+                </section>
+                <section>
+                    <img src='assets/1957-Mercury-GeneralView.jpg'>
+                    <p>Ferranti Mercury. 1957</p>
+                </section>
+                <section>
+                    <img src='assets/edsac.jpg'>
+                    <p>EDSAC</p>
+                </section>
+                <section>
+                    <img src='assets/1200px-University_of_Manchester_Atlas,_January_1963.jpg'>
+                    <p>ATLAS 2</p>
+                </section>
+                <section>
+                    <img src='assets/John_Backus_2.jpg'>
+                    <p>John Backus (03.12.1924 - 17.03.2007)</p>
+                </section>
+                <section>
+                    <img src='assets/IBM_704_mainframe.jpg'>
+                    <p>IBM 704</p>
+                </section>
+                <section>
+                    <img src='assets/Fortran_acs_cover.jpeg'>
+                </section>
+                <section>
+                    <img src='assets/FortranCardPROJ039.agr.jpg'>
+                    <p>FORTRAN code on a punched card</p>
+                </section>
+                <section>
+                    <img src='assets/720px-Commodore_Grace_M._Hopper,_USN_(covered).jpg'>
+                    <p>Grace Hopper (09.12.1906 - 01.01.1992)</p>
+                </section>
+                <section>
+                    <pre>
+			(0)  INPUT INVENTORY FILE-A PRICE FILE-B ; OUTPUT PRICED-INV FILE-C UNPRICED-INV
+				FILE-D ; HSP D .
+			(1)  COMPARE PRODUCT-NO (A) WITH PRODUCT-NO (B) ; IF GREATER GO TO OPERATION 10 ;
+				IF EQUAL GO TO OPERATION 5 ; OTHERWISE GO TO OPERATION 2 .
+			(2)  TRANSFER A TO D .
+			(3)  WRITE-ITEM D .
+			(4)  JUMP TO OPERATION 8 .
+			(5)  TRANSFER A TO C .
+			(6)  MOVE UNIT-PRICE (B) TO UNIT-PRICE (C) .
+			(7)  WRITE-ITEM C .
+			(8)  READ-ITEM A ; IF END OF DATA GO TO OPERATION 14 .
+			(9)  JUMP TO OPERATION 1 .
+			(10)  READ-ITEM B ; IF END OF DATA GO TO OPERATION 12 .
+			(11)  JUMP TO OPERATION 1 .
+			(12)  SET OPERATION 9 TO GO TO OPERATION 2 .
+			(13)  JUMP TO OPERATION 2 .
+			(14)  TEST PRODUCT-NO (B) AGAINST ; IF EQUAL GO TO OPERATION 16 ;
+				OTHERWISE GO TO OPERATION 15 .
+			(15)  REWIND B .
+			(16)  CLOSE-OUT FILES C ; D .
+			(17)  STOP . (END)
+			</pre>
+                    <p>Example of FLOW-MATIC code</p>
+                </section>
+                <section>
+                    <pre>
+						ADD 1 TO x
+						ADD 1, a, b TO x ROUNDED, y, z ROUNDED
+				
+						ADD a, b TO c
+							ON SIZE ERROR
+							DISPLAY "Error"
+						END-ADD
+					
+						ADD a TO b
+							NOT SIZE ERROR
+							DISPLAY "No error"
+						ON SIZE ERROR
+							DISPLAY "Error"
+			</pre>
+                    <p>Example of COBOL code</p>
+                </section>
+                <section>
+                    <img src='assets/1200px-John_McCarthy_Stanford.jpg'>
+                    <p>John McCarthy (04.09.1927 - 24.10.2011)</p>
+                </section>
+                <section>
+                    <img src='assets/Lisplogo.png'>
+                    <p>
+                        LISP logo
+                    </p>
+                </section>
+                <section>
+                    <img src='assets/680px-LISP_machine.jpg'>
+                    <p>LISP machine</p>
+                </section>
+                <section>
+                    <pre>
+				procedure Absmax(a) Size:(n, m) Result:(y) Subscripts:(i, k);
+					value n, m; array a; integer n, m, i, k; real y;
+				comment The absolute greatest element of the matrix a, of size n by m
+					is transferred to y, and the subscripts of this element to i and k;
+				begin
+					integer p, q;
+					y := 0; i := k := 1;
+					for p := 1 step 1 until n do
+						for q := 1 step 1 until m do
+							if abs(a[p, q]) > y then
+								begin y := abs(a[p, q]);
+									i := p; k := q
+								end
+				end Absmax
+			</pre>
+                    <p>Example of ALGOL code</p>
+                </section>
+                <section>
+                    <p>Some notable languages that were developed in this period include:</p>
+                    <br>
+                    <table>
+                        <tr>
+                            <td>
+
+                                <ul>
+                                    <li>1951 – Regional Assembly Language</li>
+                                    <li>1952 – Autocode</li>
+                                    <li>1954 - IPL (forerunner to LISP)</li>
+                                    <li>1955 - FLOW-MATIC (led to COBOL)</li>
+                                    <li>1957 - FORTRAN (first compiler)</li>
+                                    <li>1957 - COMTRAN (precursor to COBOL)</li>
+                                    <li>1958 - LISP</li>
+                                    <li>1958 - ALGOL 58</li>
+                                    <li>1959 - FACT (forerunner to COBOL)</li>
+                                    <li>1959 - COBOL</li>
+                                </ul>
+
+                            </td>
+                            <td>
+
+                                <ul>
+                                    <li>1959 - RPG</li>
+                                    <li>1962 - APL</li>
+                                    <li>1962 - Simula</li>
+                                    <li>1962 - SNOBOL</li>
+                                    <li>1963 – CPL (forerunner to C)</li>
+                                    <li>1964 – Speakeasy</li>
+                                    <li>1964 – BASIC</li>
+                                    <li>1964 – PL/I</li>
+                                    <li>1966 – JOSS</li>
+                                    <li>1966 - MUMPS</li>
+                                    <li>1967 – BCPL (forerunner to C)</li>
+                                </ul>
+
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h2>Establishing fundamental paradigms</h2>
+                </section>
+                <section>
+                    <pre>
+					$ suppose you have a very long statement, 
+					$ you can write it on multiple physical lines using "&" 
+					$ at the end of the line to be continued:
+					
+					:_ the_return_value = this_is_a_function_with_many_arguments(argument_1, argument_2, &
+					:&                             argument_3, argument_4, argument_5, argument_6)
+					
+					$ on the other hand, you can collect several short statements 
+					$ on a single physical line using ";"
+					:_ a=1; b=2; c=3; d=4 
+			</pre>
+                    <p>Example Speakeasy code</p>
+                </section>
+                <section>
+                    <img src='assets/Kristen-Nygaard-SBLP-1997-head.png'>
+                    <p>Kristen Nygaard (27.08.1926 - 10.08.2002)</p>
+                </section>
+                <section>
+                    <pre>
+					Begin
+   						OutText ("Hello, World!");
+  						Outimage;
+					End;
+			</pre>
+                    <p>An example of a Hello world program in Simula</p>
+                </section>
+                <section>
+                    <img src='assets/ritchy-thompson.jpg'>
+                    <p>Dennis Ritchie and Ken Thompson</p>
+                </section>
+                <section>
+                    <pre>
+						long some_function();
+						/* int */ other_function();
+					
+						/* int */ calling_function()
+						{
+							long test1;
+							register /* int */ test2;
+					
+							test1 = some_function();
+							if (test1 > 0)
+								  test2 = 0;
+							else
+								  test2 = other_function();
+							return test2;
+						}
+			</pre>
+                    <p><br>Example of C code</p>
+                </section>
+                <section>
+                    <img src='assets/Smalltalk80book.jpg'>
+                    <pre>
+				exampleWithNumber: x
+					| y |
+					true & false not & (nil isNil) ifFalse: [self halt].
+					y := self size + super size.
+					#($a #a "a" 1 1.0)
+						do: [ :each |
+						Transcript show: (each class name);
+							show: ' '].
+				^x < y
+						</pre>
+                </section>
+                <section>
+                    <img src='assets/Kolmerauer-Kovalski.jpg'>
+                    <p>Robert Kowalski and Alan Colmerauer</p>
+                </section>
+                <section>
+                    <pre>
+						?- write('Hello World!'), nl.
+						Hello World!
+						true.
+						
+						?-
+						</pre>
+                    <p>An example of a Hello world program in Prolog</p>
+                </section>
+                <section>
+                    <img src='assets/Arthur_John_Robin_Gorell_Milner.jpg'>
+                    <p>Arthur John Robin Gorell Milner (13.01.1934 - 20.03.2010)</p>
+                </section>
+                <section>
+                    <pre>
+						fun fact n = let
+						fun fac 0 = 1
+						  | fac n = n * fac (n - 1)
+						in
+						  if (n < 0) then raise Fail "negative argument"
+						  else fac n
+						end
+					</pre>
+                    <p>The factorial function on ML</p>
+                </section>
+                <section>
+                    <p>Some notable languages that were developed in this period include:</p>
+                    <br>
+                    <table>
+                        <tr>
+                            <td>
+
+                                <ul>
+                                    <li>1967 – BCPL (forerunner to B)</li>
+                                    <li>1968 – Logo</li>
+                                    <li>1969 – B (forerunner to C)</li>
+                                    <li>1970 – Pascal</li>
+                                    <li>1970 – Forth</li>
+                                    <li>1972 – C </li>
+                                </ul>
+
+                            </td>
+                            <td>
+
+                                <ul>
+                                    <li>1972 – Smalltalk</li>
+                                    <li>1972 – Prolog</li>
+                                    <li>1973 – ML</li>
+                                    <li>1975 – Scheme</li>
+                                    <li>1978 – SQL (a query language, later extended)</li>
+                                </ul>
+
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h2>1980s: consolidation, modules, performance</h2>
+                </section>
+                <section>
+                    <img src='assets/Bjarne-stroustrup_(cropped).jpg'>
+                    <p>Bjarne Stroustrup. (Born in 30.12.1950)</p>
+                </section>
+                <section>
+                    <img src='assets/ISO_C++_Logo.svg'>
+                    <pre>
+						#include <iostream>
+
+						int main()
+						{
+							std::cout << "Hello, world!\n";
+						}
+					</pre>
+                    <p>"Hello, World!" in C++</p>
+                </section>
+                <section>
+                    <img src='assets/Jean_Ichbiah.jpg'>
+                    <p>Jean Ichbiah (25.03.1940 - 26.01.2007)</p>
+                </section>
+                <section>
+                    <img src='assets/829px-Ada_Mascot_with_slogan.png'>
+                </section>
+                <section>
+                    <pre>
+							with Ada.Text_IO;
+
+							procedure Hello is
+								use Ada.Text_IO;
+							begin
+								Put_Line("Hello, world!");
+							end Hello;
+					</pre>
+                    <p>"Hello, World!" in Ada</p>
+                </section>
+                <section>
+                    <img src='assets/Miranda_logo_(programming_language).jpg'>
+                    <pre>
+						max2 :: num -> num -> num
+						max2 a b = a, if a>b
+								 = b, otherwise
+						
+						max3 :: num -> num -> num -> num
+						max3 a b c = max2 (max2 a b) (max2 a c)
+						
+						multiply :: num -> num -> num
+						multiply 0 b = 0
+						multiply a b = a + (multiply (a-1) b)
+					</pre>
+                    <p>Simple code in Miranda</p>
+                </section>
+                <section>
+                    <p>Some notable languages that were developed in this period include:</p>
+                    <br>
+                    <table>
+                        <tr>
+                            <td>
+
+                                <ul>
+                                    <li>1980 – C++ (as C with classes, renamed in 1983)</li>
+                                    <li>1983 – Ada</li>
+                                    <li>1984 – Common Lisp</li>
+                                    <li>1984 – MATLAB</li>
+                                    <li>1984 – dBase III, dBase III Plus (Clipper and FoxPro as FoxBASE, later developing into Visual FoxPro)</li>
+                                    <li>1985 – Eiffel</li>
+                                    <li>1986 – Objective-C</li>
+                                </ul>
+
+                            </td>
+                            <td>
+
+                                <ul>
+                                    <li>1986 – LabVIEW (Visual Programming Language)</li>
+                                    <li>1986 – Erlang</li>
+                                    <li>1987 – Perl</li>
+                                    <li>1988 – Tcl</li>
+                                    <li>1988 – Wolfram Language (as part of Mathematica, only got a separate name in June 2013)</li>
+                                    <li>1989 – FL (Backus) </li>
+                                </ul>
+
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h2>1990s: the Internet age</h2>
+                </section>
+                <section>
+                    <img src='assets/900px-Brendan_Eich_Mozilla_Foundation_official_photo.jpg'>
+                    <p>Brendan Eich (born in 04.07.1961)</p>
+                </section>
+                <section>
+                    <img src='assets/NetscapeNavigator_9_logo.png'>
+                </section>
+                <section>
+                    <img src='assets/512px-Unofficial_JavaScript_logo_2.svg.png'>
+                </section>
+                <section>
+                    <img src='assets/1200px-Rasmus_Lerdorf_August_2014_(cropped).jpg'>
+                    <p>Rasmus Lerdorf (born in 22.11.1968)</p>
+                </section>
+                <section>
+                    <img src='assets/640px-PHP-logo.svg.png'>
+                </section>
+                <section>
+                    <p>Some notable languages that were developed in this period include:</p>
+                    <br>
+                    <table>
+                        <tr>
+                            <td>
+
+                                <ul>
+                                    <li>1990 – Haskell</li>
+                                    <li>1991 – Python</li>
+                                    <li>1991 – Visual Basic</li>
+                                    <li>1993 – Lua</li>
+                                    <li>1993 – R</li>
+                                    <li>1994 – CLOS (part of ANSI Common Lisp)</li>
+                                </ul>
+
+                            </td>
+                            <td>
+
+                                <ul>
+                                    <li>1995 – Ruby</li>
+                                    <li>1995 – Ada</li>
+                                    <li>1995 – Java</li>
+                                    <li>1995 – Delphi (Object Pascal)</li>
+                                    <li>1995 – JavaScript</li>
+                                    <li>1995 – PHP </li>
+                                    <li>1997 – Rebol</li>
+                                </ul>
+
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h2>Current Trends</h2>
+                </section>
+                <section>
+                    <p>Some of the recent trends:</p>
+                    <br>
+                    <ul>
+                        <li>
+                            Increasing support for functional programming in mainstream languages used commercially, including pure functional programming for making code easier to reason about and easier to parallelise (at both micro- and macro- levels)
+                        </li>
+                        <li>
+                            Constructs to support concurrent and distributed programming
+                        </li>
+                        <li>
+                            Mechanisms for adding security and reliability verification to the language: extended static checking, dependent typing, information flow control, static thread safety
+                        </li>
+                        <li>
+                            Alternative mechanisms for composability and modularity: mixins, traits, typeclasses, delegates, aspects
+                        </li>
+                        <li>
+                            Component-oriented software development
+                        </li>
+                        <li>
+                            Metaprogramming, reflection or access to the abstract syntax tree
+                        </li>
+                        <li>
+                            AOP or Aspect Oriented Programming allowing developers to insert code in another module or class at "join points"
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <ul>
+                        <li>
+                            Domain specific languages and code generation
+                        </li>
+                        <li>
+                            XML for graphical interface (XUL, XAML)
+                        </li>
+                        <li>
+                            Increased interest in distribution and mobility
+                        </li>
+                        <li>
+                            Integration with databases, including XML and relational databases
+                        </li>
+                        <li>
+                            Open source as a developmental philosophy for languages, including the GNU Compiler Collection and languages such as Python, Ruby, and Scala.
+                        </li>
+                        <li>
+                            Massively parallel languages for coding 2000 processor GPU graphics processing units and supercomputer arrays including OpenCL
+                        </li>
+                        <li>
+                            Early research into (as-yet-unimplementable) quantum computing programming languages
+                        </li>
+                        <li>
+                            More interest in visual programming languages like Scratch
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <img src='assets/Scratch_Cat.png'>
+                </section>
+                <section>
+                    <p>Some notable languages that were developed in this period include:</p>
+                    <br>
+                    <table>
+                        <tr>
+                            <td>
+
+                                <ul>
+                                    <li>2000 – ActionScript</li>
+                                    <li>2001 – C#</li>
+                                    <li>2001 – D</li>
+                                    <li>2002 – Scratch</li>
+                                    <li>2003 – Groovy</li>
+                                    <li>2003 – Scala</li>
+                                    <li>2005 – F#</li>
+                                    <li>2006 – PowerShell</li>
+                                </ul>
+
+                            </td>
+                            <td>
+
+                                <ul>
+                                    <li>2007 – Clojure</li>
+                                    <li>2009 – Go</li>
+                                    <li>2010 – Rust</li>
+                                    <li>2011 – Dart</li>
+                                    <li>2011 – Kotlin</li>
+                                    <li>2011 – Elixir</li>
+                                    <li>2012 – Julia</li>
+                                    <li>2012 - TypeScript</li>
+                                    <li>2014 – Swift</li>
+                                </ul>
+
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </section>
+        </div>
+    </div>
+    <script src="js/reveal.js"></script>
+    <script>
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            dependencies: [{
+                src: 'plugin/markdown/marked.js'
+            }, {
+                src: 'plugin/markdown/markdown.js'
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true
+            }],
+            width: 1920,
+            height: 1080
+        });
+    </script>
+</body>
+
 </html>
